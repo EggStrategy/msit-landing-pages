@@ -1,0 +1,88 @@
+
+[class*="icon-circle"] {
+  margin-bottom: 1em;
+}
+
+.form-question {
+  margin-bottom: 1.5em;
+  padding: 0 10%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+}
+
+.form-item:nth-of-type(1) {
+  background: $blue;
+  border-top: 10px solid $blue-md;
+  
+  label {
+    background: $blue-md;
+    padding: 1em 0;
+    
+    &:hover {
+      background: $blue-dk;
+    }
+  }
+
+  .form-radio input:checked + label {
+    background: $blue-dk;
+  }
+}
+
+
+.form-item:nth-of-type(2) {
+  background: $green;
+  border-top: 10px solid $green-md;
+  
+  label {
+    background: $green-md;
+    
+    &:hover {
+      background: $green-dk;
+    }
+  }
+
+  .form-radio input:checked + label {
+    background: $green-dk;
+  }
+}
+
+
+.form-item:nth-of-type(3) {
+  background: $red;
+  border-top: 10px solid $red-md-dk;
+  
+  label {
+    background: $red-md;
+    
+    &:hover {
+      background: $red-dk;
+    }
+  }
+
+  .form-radio input:checked + label {
+    background: $red-dk;
+  }
+}
+
+.form-radio input:checked + label {
+}
+
+.form-two-options {
+  @include cf;
+  .form-radio {
+    float: left;
+    width: 50%;
+  }
+  label {
+    padding: 4em 0;
+  }
+}
+
+
+
+
+.error .form-question {
+  color: #f00;
+}

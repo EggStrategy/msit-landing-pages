@@ -1,0 +1,59 @@
+
+[class*="icon-"] {
+  display: inline-block;
+  background: $sprite-png no-repeat 0 0;
+  background: $sprite no-repeat 0 0;
+}
+
+.icon-circle-1 {
+  width: 175px;
+  height: 179px;
+}
+
+.icon-circle-2 {
+  width: 188px;
+  height: 178px;
+  background-position: 0 -183px;
+}
+
+.icon-circle-3 {
+  width: 170px;
+  height: 179px;
+  background-position: 0 -365px;
+}
+
+[class*="icon-error-"] {
+  width: 31px;
+  height: 27px;
+}
+
+/*
+.icon-error-grey {
+  background-position: ;
+}
+
+.icon-error-white {
+  background-position: ;
+}
+*/
+
+
+
+/*
+.icon-circle-1 {
+  width: 174px;
+  height: 176px;
+}
+
+.icon-circle-2 {
+  width: 188px;
+  height: 176px;
+  background-position: 0 -178px;
+}
+
+.icon-circle-3 {
+  width: 167px;
+  height: 176px;
+  background-position: 0 -356px;
+}
+*/

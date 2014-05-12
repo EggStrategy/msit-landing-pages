@@ -1,0 +1,31 @@
+
+a {
+	@include transition(all 0.15s ease-in);
+	color: #fff;
+	
+	&:hover {
+	  border-bottom: 1px solid #fff;
+	}
+}
+
+.btn,
+button {
+  @include transition(background 0.15s ease-in);
+  width: 100%;
+  padding: 2em 0;
+  border: 10px solid #fff;
+  background: $yellow;
+  color: $grey;
+  font: $bold 20px/1em $sans;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  
+  &:hover {
+    background: lighten($yellow, 10%);
+  }
+  
+  @include bp-max-width($small) {
+  }
+}
+

@@ -5,4 +5,12 @@
   color: #fff;
   font-size: 11px;
   text-align: center;
+
+  @include bp-min-width($large) {
+    text-align: left;
+    
+    p {
+      padding-left: 3em;
+    }
+  }
 }

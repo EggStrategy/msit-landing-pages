@@ -1,6 +1,5 @@
 $(function(){
 
-
   // Form Validation / Submission
 	function formSubmit() {
   	$('form').submit(function(e) {
@@ -11,8 +10,12 @@ $(function(){
   		
   		$('.form-item').each(function() {
   		    var radioChecked = $(this).find('input[type="radio"]:checked');
+  		    var errorIcon = $('<div class="icon-error-white"><div>');
+  		    var errorDiv = $('<div class="icon-error-white"><div>');
       		if(radioChecked.length == 0) {
             $(this).addClass('error');
+            $(this).append(errorIcon);
+            $().append();
             errorcount++;
       		} else if(radioChecked.length > 0) {
             $(this).removeClass('error');
@@ -44,9 +47,7 @@ $(function(){
           		if (width < 700) {
           		    $("html, body").animate({ scrollTop: 0 }, 0);
           		}
-      		});
-      		console.log(page_id);
-  		
+      		});  		
   		}
   
   	});

@@ -24,8 +24,6 @@ button {
   &:hover {
     background: lighten($yellow, 10%);
   }
-  
-  @include bp-max-width($small) {
-  }
+
 }
 

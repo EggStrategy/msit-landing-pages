@@ -78,6 +78,7 @@ a {
 }
 
 body {
+  color: #4d4d4f;
   font: 400 1em/1.5em "Montserrat", Helvetica, arial, sans-serif;
 }
 
@@ -86,7 +87,6 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  color: #4d4d4f;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -130,15 +130,14 @@ em {
   height: 27px;
 }
 
-/*
-.icon-error-grey {
-  background-position: ;
+.icon-error-white {
+  background-position: 0 -734px;
 }
 
-.icon-error-white {
-  background-position: ;
+.icon-error-grey {
+  background-position: -20px -734px;
 }
-*/
+
 /*
 .icon-circle-1 {
   width: 174px;
@@ -300,7 +299,7 @@ label {
 @media (min-width: 50em) {
   .form-item {
     *zoom: 1;
-    min-height: 304px;
+    min-height: 282px;
     padding: 2em 21.25em 2em 0;
   }
   .form-item:before, .form-item:after {
@@ -358,6 +357,9 @@ label {
     width: 340px;
     height: 100%;
   }
+  .form-answers label {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 50em) {
@@ -390,6 +392,7 @@ label {
 @media (min-width: 50em) {
   .form-item:nth-of-type(1) label {
     padding: 0.75em 1em 0.75em 2em;
+    font-size: 16px;
     text-align: left;
   }
 }
@@ -468,13 +471,68 @@ label {
   }
 }
 .form-two-options label {
-  padding: 4em 0;
+  padding: 3.25em 0;
 }
 
+.form-item [class*="icon-error-"] {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+}
+@media (min-width: 62.5em) {
+  .form-item [class*="icon-error-"] {
+    top: 1.75em;
+    left: 15em;
+  }
+}
+
+@media (min-width: 50em) {
+  .form-footer {
+    *zoom: 1;
+    padding-bottom: 4em;
+  }
+  .form-footer:before, .form-footer:after {
+    content: " ";
+    display: block;
+  }
+  .form-footer:after {
+    clear: both;
+  }
+  .form-footer .btn {
+    float: right;
+    width: 340px;
+    margin-left: 3.75em;
+    padding: 3em 0;
+    border: none;
+  }
+}
+
+.form-footer .form-message {
+  display: none;
+}
+@media (min-width: 50em) {
+  .form-footer .form-message {
+    display: inline-block;
+    float: right;
+    height: 140px;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+  }
+  .form-footer .form-message p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/*
 .error .form-question {
   color: #f00;
 }
-
+*/
 /* Sections */
 .header {
   text-align: center;
@@ -541,4 +599,12 @@ label {
 }
 .footer:after {
   clear: both;
+}
+@media (min-width: 62.5em) {
+  .footer {
+    text-align: left;
+  }
+  .footer p {
+    padding-left: 3em;
+  }
 }

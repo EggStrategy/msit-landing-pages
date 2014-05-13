@@ -69,9 +69,14 @@
         </div>
 				
 				<input type="hidden" name="page_id" value="1">
-  			  			
-  			<button class="btn">Send</button>
-  		
+        
+        <div class="form-footer">
+  			  <button class="btn">Submit</button>
+          <div class="form-message">
+            <p>That's it!</p>
+          </div>
+        </div>
+        
   		</form>
 
 		</div>

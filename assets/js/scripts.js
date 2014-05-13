@@ -11,11 +11,10 @@ $(function(){
   		$('.form-item').each(function() {
   		    var radioChecked = $(this).find('input[type="radio"]:checked');
   		    var errorIcon = $('<div class="icon-error-white"><div>');
-  		    var errorDiv = $('<div class="icon-error-white"><div>');
+  		    var formMessage = $('.form-message');
       		if(radioChecked.length == 0) {
             $(this).addClass('error');
             $(this).append(errorIcon);
-            $().append();
             errorcount++;
       		} else if(radioChecked.length > 0) {
             $(this).removeClass('error');

@@ -71,7 +71,7 @@
 				<input type="hidden" name="page_id" value="1">
         
         <div class="form-footer">
-  			  <button class="btn">Submit</button>
+  			  <button class="btn">Submit <span class="icon-arrow"></span></button>
           <div class="form-message">
             <p>That's it!</p>
           </div>

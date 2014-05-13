@@ -15,7 +15,7 @@
 	<header class="header">
 		<div class="wrapper cf">
 		
-		  <div class="logo">Logo</div>
+		  <div class="logo"><img src="/assets/images/logo-hard-rock.png" alt="Hard Rock"></div>
 		  
 		  <div class="tagline">
 		    <h1>We want to hear from you!</h1>

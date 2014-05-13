@@ -509,6 +509,14 @@ label {
   color: #f00;
 }
 */
+.admin {
+  text-align: center;
+  padding: 4em 0;
+}
+.admin .btn {
+  display: inline-block;
+}
+
 /* Sections */
 .header {
   text-align: center;

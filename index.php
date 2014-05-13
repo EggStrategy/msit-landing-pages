@@ -94,4 +94,4 @@
 		</div>
 	</section>
 
-<?php include 'views/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/views/footer.php'; ?>

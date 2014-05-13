@@ -1,3 +1,6 @@
+.htaccess
+.htpasswd
+
 .sass-cache
 
 php/*

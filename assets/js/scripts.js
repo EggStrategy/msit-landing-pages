@@ -15,6 +15,7 @@ $(function(){
       		if(radioChecked.length == 0) {
             $(this).addClass('error');
             $(this).append(errorIcon);
+            $(formMessage).html('<p><span class="icon-error-grey"></span> Please answer </p>');
             errorcount++;
       		} else if(radioChecked.length > 0) {
             $(this).removeClass('error');

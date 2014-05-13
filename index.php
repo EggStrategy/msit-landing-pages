@@ -6,6 +6,10 @@
   		<form action="">
 
         <div class="form-item">
+          <div class="form-question-count">
+            <div class="question-number">01</div>
+            <div class="question-total">(of 3)</div>
+          </div>
           <div class="icon-circle-1"></div>
   				<p class="form-question">When was the last time you visited a Hard Rock Cafe?</p>
   				<div class="form-answers">
@@ -35,6 +39,10 @@
         </div>
 
         <div class="form-item">
+          <div class="form-question-count">
+            <div class="question-number">02</div>
+            <div class="question-total">(of 3)</div>
+          </div>
           <div class="icon-circle-2"></div>
   				<p class="form-question">Have you recently recommended Hard Rock Cafe to a friend or family member? </p>
   				<div class="form-answers form-two-options">
@@ -52,6 +60,10 @@
         </div>
 
         <div class="form-item">
+          <div class="form-question-count">
+            <div class="question-number">03</div>
+            <div class="question-total">(of 3)</div>
+          </div>
           <div class="icon-circle-3"></div>
   				<p class="form-question">Did you share anything about your last experience at a Hard Rock Cafe with a friend, family member or online (e.g. Facebook)?</p>
   				<div class="form-answers form-two-options">

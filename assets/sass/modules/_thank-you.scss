@@ -1,0 +1,44 @@
+
+.modal-thank-you {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: $blue;
+  
+  .wrapper {
+    @include vertical-align;
+    height: 100%;
+  }
+  
+  .content {
+    padding: 3.75em 0 0 12.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    margin: 0.25em 0 0.5em;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0 0.25em;
+    border-bottom: 1px solid $grey;
+    color: $grey;
+    
+    &:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}

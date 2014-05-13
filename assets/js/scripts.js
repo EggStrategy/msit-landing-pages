@@ -39,14 +39,7 @@ $(function(){
       		}
       		$.post('/php/survey.php', data, function(response){
       			// do funky stuff here, like fade out the form and show a thank you message
-      			$('form').fadeOut(500, function(){
-      				$(this).html('<h2>Talk to you soon!</h2>');
-      				$(this).fadeIn(500);
-      			})
-      			var width = $(window).width();
-          		if (width < 700) {
-          		    $("html, body").animate({ scrollTop: 0 }, 0);
-          		}
+      			$('.modal-thank-you').fadeIn(600);
       		});  		
   		}
   

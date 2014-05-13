@@ -94,6 +94,13 @@ h1 {
   letter-spacing: 0.1em;
 }
 
+h2 {
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 strong {
   font-weight: 700;
 }
@@ -104,7 +111,7 @@ em {
 
 [class*="icon-"] {
   display: inline-block;
-  background: url('/assets/images/sprite.png?1400010993') no-repeat 0 0;
+  background: url('/assets/images/sprite.png') no-repeat 0 0;
   /*   background: $sprite no-repeat 0 0; */
 }
 
@@ -123,6 +130,12 @@ em {
   width: 170px;
   height: 179px;
   background-position: 0 -365px;
+}
+
+.icon-circle-4 {
+  width: 170px;
+  height: 179px;
+  background-position: 0 -550px;
 }
 
 [class*="icon-error-"] {
@@ -239,6 +252,48 @@ label {
 }
 
 /* Modules */
+.modal-thank-you {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: #1bc7d5;
+}
+.modal-thank-you .wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 100%;
+}
+.modal-thank-you .content {
+  padding: 3.75em 0 0 12.5em;
+  text-align: center;
+}
+.modal-thank-you h2 {
+  margin: 0.25em 0 0.5em;
+}
+.modal-thank-you p {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.modal-thank-you a {
+  display: inline-block;
+  padding: 0 0.25em;
+  border-bottom: 1px solid #4d4d4f;
+  color: #4d4d4f;
+}
+.modal-thank-you a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 /* Pages */
 .form-item {
   position: relative;
@@ -486,6 +541,11 @@ label {
   font-weight: 700;
   text-align: center;
 }
+@media (min-width: 50em) {
+  .form-question-count {
+    display: none;
+  }
+}
 .form-question-count .question-number {
   font-size: 14px;
   line-height: 24px;
@@ -504,11 +564,6 @@ label {
   text-transform: uppercase;
 }
 
-/*
-.error .form-question {
-  color: #f00;
-}
-*/
 .admin {
   text-align: center;
   padding: 4em 0;

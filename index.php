@@ -90,8 +90,18 @@
         </div>
         
   		</form>
-
+  		
 		</div>
 	</section>
+
+	<div class="modal-thank-you">
+	  <div class="wrapper">
+      <div class="icon-circle-4"></div>
+      <div class="content">
+        <h2>Thank You!</h2>
+        <p><a href="">Back to Google search <span class="icon-arrow-grey"></span></a></p>
+      </div>
+	  </div>
+	</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/views/footer.php'; ?>

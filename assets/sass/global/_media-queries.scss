@@ -1,10 +1,8 @@
 
-$xlarge:  1100px;
-$large:   900px;
-$medium:  740px;
-$small:   600px;
-$xsmall:  440px;
-$tiny:    350px;
+$large:   62.5em;
+$medium:  50em;
+$small:   37.5em;
+$xsmall:  27.5em;
 
 
 @mixin bp-max-width($point) {

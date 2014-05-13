@@ -1,6 +1,35 @@
 
+.form-item {
+  position: relative;
+  margin-bottom: 1px;
+  padding-top: 1.5em;
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    @include cf;
+    min-height: 304px;
+    padding: 2em 21.25em 2em 0;
+  }
+
+  @include bp-min-width($large) {
+    padding: 3.75em 21.25em 1em 1.5em;
+    text-align: left;
+  }
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
 [class*="icon-circle"] {
   margin-bottom: 1em;
+
+  @include bp-min-width($large) {
+    position: absolute;
+    top: 3.75em;
+    left: 1.75em;
+  }
 }
 
 .form-question {
@@ -10,16 +39,54 @@
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.1em;
+  
+  @include bp-min-width($large) {
+    padding: 0 1em 0 9em;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.form-answers {
+  @include bp-min-width($medium) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 1px;
+    width: 340px;
+    height: 100%;
+  }
+}
+
+.form-group {
+  @include bp-min-width($medium) {
+    @include vertical-align;
+  }
 }
 
 .form-item:nth-of-type(1) {
   background: $blue;
-  border-top: 10px solid $blue-md;
+  border-top: 10px solid $blue-md-dk;
+
+  @include bp-min-width($medium) {
+    border-top: none;
+    border-left: 14px solid $blue-md-dk;
+  }
   
+  .form-answers {
+    background: $blue-md;
+  }
+    
   label {
     background: $blue-md;
     padding: 1em 0;
     
+    @include bp-min-width($medium) {
+      padding: 0.75em 1em 0.75em 2em;
+      text-align: left;
+    }
+
     &:hover {
       background: $blue-dk;
     }
@@ -34,7 +101,16 @@
 .form-item:nth-of-type(2) {
   background: $green;
   border-top: 10px solid $green-md;
-  
+
+  @include bp-min-width($medium) {
+    border-top: none;
+    border-left: 14px solid $green-md-dk;
+  }
+    
+  .form-answers {
+    background: $green-md;
+  }
+
   label {
     background: $green-md;
     
@@ -52,7 +128,16 @@
 .form-item:nth-of-type(3) {
   background: $red;
   border-top: 10px solid $red-md-dk;
-  
+
+  @include bp-min-width($medium) {
+    border-top: none;
+    border-left: 14px solid $red-md-dk;
+  }
+    
+  .form-answers {
+    background: $red-md;
+  }
+
   label {
     background: $red-md;
     
@@ -71,10 +156,18 @@
 
 .form-two-options {
   @include cf;
+
   .form-radio {
     float: left;
     width: 50%;
+
+    @include bp-min-width($medium) {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
   }
+
   label {
     padding: 4em 0;
   }

@@ -1,14 +1,43 @@
 
 .header {
   text-align: center;
+
+  @include bp-min-width($medium) {
+    text-align: left;
+  }
+  
+  .wrapper {
+    @include bp-min-width($medium) {
+      height: 198px;
+    }
+  }
 }
 
 .logo {
   margin: 1em 0;
+
+  @include bp-min-width($medium) {
+    @include vertical-align;
+    float: left;
+    margin: 0;
+    padding-left: 2em;
+  }
 }
 
 .tagline {
   margin-bottom: 1px;
   padding: 2em 1em;
   background: $yellow;
+
+  @include bp-min-width($medium) {
+    float: right;
+    width: 340px;
+    height: 100%;
+    padding: 0 10em 0 2em;
+
+    h1 {
+      @include vertical-align;
+    }
+  }
+
 }

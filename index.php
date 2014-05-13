@@ -99,7 +99,7 @@
       <div class="icon-circle-4"></div>
       <div class="content">
         <h2>Thank You!</h2>
-        <p><a href="">Back to Google search <span class="icon-arrow-grey"></span></a></p>
+        <p><a href="https://www.google.com">Back to Google search <span class="icon-arrow-grey"></span></a></p>
       </div>
 	  </div>
 	</div>

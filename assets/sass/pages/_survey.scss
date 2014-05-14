@@ -210,9 +210,9 @@
   @include bp-min-width($medium) {
     @include cf;
     padding-bottom: 4em;
+    text-align: right;
       
     .btn {
-      float: right;
       width: 340px;
       margin-left: 3.75em;
       padding: 3em 0;
@@ -223,18 +223,21 @@
 
 .form-footer .form-message {
   display: none;
+  
+  &.error-message {
+    @include bp-max-width($medium) {
+      display: block;
+      padding-top: 0.5em;
+      text-align: center;
+    }
+  }
 
   @include bp-min-width($medium) {
     display: inline-block;
-    float: right;
-    height: 140px;
     text-align: right;
     font-size: 20px;
     letter-spacing: 0.05em;
     
-    p {
-      @include vertical-align;
-    }
   }
 }
 

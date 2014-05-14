@@ -9,7 +9,6 @@ $(function(){
     });
   }
 
-
   // Form Validation / Submission
 	function formSubmit() {
   	$('form').submit(function(e) {
@@ -39,6 +38,7 @@ $(function(){
     		  for (var i = 0; i < errorItem.length; i++) {
       		  a.push('#' + (i+1));
     		  }
+    		  $(formMessage).parent().addClass('error-message');
           $(formMessage).text(' Please answer ').append(a.join(', '));
           $(formMessage).prepend('<span class="icon-error-grey"></span>');
   		  }
@@ -48,7 +48,7 @@ $(function(){
   		if(errorcount == 0) {
   
       		// prevent multiple form submissions
-      		$(this).find('button').prop('disabled', 'disabled').html('Please wait...');
+      		$(this).find('button').prop('disabled', 'disabled').html('Send...');
       
       		var question_1 = $('input[name="question_1"]:checked').val();
       		var question_2 = $('input[name="question_2"]:checked').val();

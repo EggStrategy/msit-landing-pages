@@ -596,6 +596,7 @@ label {
   .form-footer {
     *zoom: 1;
     padding-bottom: 4em;
+    text-align: right;
   }
   .form-footer:before, .form-footer:after {
     content: " ";
@@ -605,7 +606,6 @@ label {
     clear: both;
   }
   .form-footer .btn {
-    float: right;
     width: 340px;
     margin-left: 3.75em;
     padding: 3em 0;
@@ -616,21 +616,19 @@ label {
 .form-footer .form-message {
   display: none;
 }
+@media (max-width: 50em) {
+  .form-footer .form-message.error-message {
+    display: block;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+}
 @media (min-width: 50em) {
   .form-footer .form-message {
     display: inline-block;
-    float: right;
-    height: 140px;
     text-align: right;
     font-size: 20px;
     letter-spacing: 0.05em;
-  }
-  .form-footer .form-message p {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
 }
 

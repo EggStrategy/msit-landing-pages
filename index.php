@@ -16,23 +16,23 @@
   				  <div class="form-group">
       				<div class="form-radio">
                 <input type="radio" name="question_1" id="past-month" value="Past Month">
-      				  <label for="past-month">Within the past month</label>
+      				  <label for="past-month"><span>Within the past month</span></label>
       				</div>
       				<div class="form-radio">
                 <input type="radio" name="question_1" id="three-months" value="Three Months">
-      				  <label for="three-months">Within the past 3 months</label>
+      				  <label for="three-months"><span>Within the past 3 months</span></label>
       				</div>
       				<div class="form-radio">
                 <input type="radio" name="question_1" id="past-year" value="Past Year">
-      				  <label for="past-year">Within the past year</label>
+      				  <label for="past-year"><span>Within the past year</span></label>
       				</div>
       				<div class="form-radio">
                 <input type="radio" name="question_1" id="over" value="Over">
-      				  <label for="over">Over a year ago</label>
+      				  <label for="over"><span>Over a year ago</span></label>
       				</div>
       				<div class="form-radio">
                 <input type="radio" name="question_1" id="never" value="Never">
-      				  <label for="never">Never</label>
+      				  <label for="never"><span>Never</span></label>
       				</div>
   				  </div>
   				</div>

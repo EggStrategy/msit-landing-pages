@@ -77,13 +77,12 @@
     border-top: none;
     border-left: 14px solid $blue-md-dk;
   }
-  
+    
   .form-answers {
     background: $blue-md;
   }
     
   label {
-    background: $blue-md;
     padding: 1em 0;
     
     @include bp-min-width($medium) {
@@ -92,7 +91,11 @@
       text-align: left;
     }
 
-    &:hover {
+    &:after {
+      background: $blue-md;
+    }
+
+    &:hover:after {
       background: $blue-dk;
     }
   }

@@ -22,7 +22,6 @@ $(function(){
   		});
   		
   		if(errorcount > 0) {
-  		  
   		  function qNumber(errorItem) {
     		  var a = []
     		  var formMessage = $('.form-message p');
@@ -34,12 +33,6 @@ $(function(){
           $(formMessage).prepend('<span class="icon-error-grey"></span>');
   		  }
   		  qNumber();
-        
-        
-/*
-		    $('.error').each(function(i) {
-        });
-*/
   		}
   		
   		if(errorcount == 0) {

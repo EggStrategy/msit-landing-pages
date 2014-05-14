@@ -14,20 +14,14 @@ label {
   position: relative;
 
   input {
-/*
     opacity: 0;
-    float: left
-*/;
-  position: relative;
-  z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     float: right;
     width: 100%;
-    height: 40px;
-    background: #000;
-    
-    &:checked {
-      background: #ccc;
-    }
+    height: 100%;
   }
 }
 

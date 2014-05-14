@@ -49,6 +49,9 @@
 }
 
 .form-answers {
+  position: relative;
+  z-index: 0;
+  
   @include bp-min-width($medium) {
     position: absolute;
     top: 0;

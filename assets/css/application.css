@@ -258,7 +258,6 @@ button:hover .icon-arrow {
   z-index: -1;
   width: 100%;
   height: 0;
-  background: #fff;
 }
 .form-radio label:hover:after {
   height: 100%;
@@ -435,6 +434,10 @@ label {
   }
 }
 
+.form-answers {
+  position: relative;
+  z-index: 0;
+}
 @media (min-width: 50em) {
   .form-answers {
     position: absolute;

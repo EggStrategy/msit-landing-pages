@@ -1,5 +1,15 @@
 $(function(){
 
+  function radioCheck() {
+    $('input[type="radio"]').change(function() {
+      if(this.checked) {
+        $(this).parent().parent().find('.checked').removeClass('checked');
+        $(this).parent().toggleClass('checked');
+      }
+    });
+  }
+
+
   // Form Validation / Submission
 	function formSubmit() {
   	$('form').submit(function(e) {
@@ -58,7 +68,8 @@ $(function(){
   
   	});
   }
-
+  
+  radioCheck();
   formSubmit();
 
 });

@@ -21,7 +21,6 @@
   }
 }
 
-
 [class*="icon-circle"] {
   margin-bottom: 1em;
 
@@ -194,8 +193,12 @@
 
 .form-item [class*="icon-error-"] {
   position: absolute;
-  top: 2em;
+  top: 4.5em;
   left: 1em;
+
+  @include bp-min-width($medium) {
+    top: 2em;
+  }
 
   @include bp-min-width($large) {
     top: 1.75em;

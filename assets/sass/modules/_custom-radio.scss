@@ -64,20 +64,6 @@
   }
 }
 
-
-/*
-  @include bp-min-width(1026px) {
-    &:hover:after {
-      height: 100%;
-    }
-  
-    &:hover span:after {
-      opacity: 1;
-      @include translateY(4px);
-    }
-  }
-*/
-
 .form-radio input:checked + label span:after {
   opacity: 1;
   @include translateY(4px);

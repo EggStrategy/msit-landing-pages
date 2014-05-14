@@ -7,20 +7,40 @@ $(function(){
   		e.preventDefault();
   
   		var errorcount = 0;
+  		var formItem = $('.form-item');
   		
-  		$('.form-item').each(function() {
+  		$(formItem).each(function() {
   		    var radioChecked = $(this).find('input[type="radio"]:checked');
   		    var errorIcon = $('<div class="icon-error-white"><div>');
-  		    var formMessage = $('.form-message');
       		if(radioChecked.length == 0) {
             $(this).addClass('error');
             $(this).append(errorIcon);
-            $(formMessage).html('<p><span class="icon-error-grey"></span> Please answer </p>');
             errorcount++;
       		} else if(radioChecked.length > 0) {
             $(this).removeClass('error');
       		}
   		});
+  		
+  		if(errorcount > 0) {
+  		  
+  		  function qNumber(errorItem) {
+    		  var a = []
+    		  var formMessage = $('.form-message p');
+  		    var errorItem = $('.error');
+    		  for (var i = 0; i < errorItem.length; i++) {
+      		  a.push('#' + (i+1));
+    		  }
+          $(formMessage).text(' Please answer ').append(a.join(', '));
+          $(formMessage).prepend('<span class="icon-error-grey"></span>');
+  		  }
+  		  qNumber();
+        
+        
+/*
+		    $('.error').each(function(i) {
+        });
+*/
+  		}
   		
   		if(errorcount == 0) {
   

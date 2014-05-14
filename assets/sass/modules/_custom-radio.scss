@@ -13,7 +13,7 @@
     height: 0;
   }
   
-  @include bp-min-width(1024px) {
+  @include bp-min-width(1026px) {
     &:hover:after {
       height: 100%;
     }

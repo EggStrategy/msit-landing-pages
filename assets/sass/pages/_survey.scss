@@ -120,9 +120,11 @@
   }
 
   label {
-    background: $green-md;
-    
-    &:hover {
+    &:after {
+      background: $green-md;
+    }
+
+    &:hover:after {
       background: $green-dk;
     }
   }
@@ -147,9 +149,11 @@
   }
 
   label {
-    background: $red-md;
-    
-    &:hover {
+    &:after {
+      background: $red-md;
+    }
+
+    &:hover:after {
       background: $red-dk;
     }
   }

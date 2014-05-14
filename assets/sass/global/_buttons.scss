@@ -1,6 +1,6 @@
 
 a {
-	@include transition(all 0.15s ease-in);
+	@include transition(all 0.15s ease);
 	color: #fff;
 	
 	&:hover {
@@ -10,7 +10,7 @@ a {
 
 .btn,
 button {
-  @include transition(background 0.15s ease-in);
+  @include transition(background 0.15s ease);
   position: relative;
   width: 100%;
   padding: 2em 0;
@@ -25,14 +25,23 @@ button {
   &:hover {
     background: lighten($yellow, 10%);
   }
+  
+  .icon-arrow {
+   @include transition(all 0.3s ease);
+   @include translateX(0);
+  }  
+  
+  &:hover .icon-arrow {
+   @include translateX(4px);
+  }
 
 }
 
-.form-item label {
+.form-radio label {
   position: relative;
 
   &:after {
-  @include transition(all 0.4s ease 0s);
+    @include transition(all 0.3s ease);
     content: "";
     position: absolute;
     top: 0;
@@ -56,7 +65,7 @@ button {
     position: relative;
     
     &:after {
-      @include transition(all 0.3s ease 0s);
+      @include transition(all 0.3s ease);
       @include translateY(10px);
       opacity: 0;
       content: "";
@@ -66,8 +75,11 @@ button {
       width: 100%;
       height: 1px;
       background: #fff;
-    }
-    
+    } 
   }
+}
 
+.form-radio input:checked + label span:after {
+  opacity: 1;
+  @include translateY(4px);
 }

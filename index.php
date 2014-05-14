@@ -49,11 +49,11 @@
   				  <div class="form-group">
       				<div class="form-radio">
                 <input type="radio" name="question_2" id="q2-yes" value="Yes">
-      				  <label for="q2-yes">Yes</label>
+      				  <label for="q2-yes"><span>Yes</span></label>
       				</div>
       				<div class="form-radio">
                 <input type="radio" name="question_2" id="q2-no" value="No">
-      				  <label for="q2-no">No</label>
+      				  <label for="q2-no"><span>No</span></label>
       				</div>
   				  </div>
   				</div>
@@ -70,11 +70,11 @@
   				  <div class="form-group">
       				<div class="form-radio">
                 <input type="radio" name="question_3" id="q3-yes" value="Yes">
-      				  <label for="q3-yes">Yes</label>
+      				  <label for="q3-yes"><span>Yes</span></label>
       				</div>
       				<div class="form-radio">
                 <input type="radio" name="question_3" id="q3-no" value="No">
-      				  <label for="q3-no">No</label>
+      				  <label for="q3-no"><span>No</span></label>
       				</div>
   				  </div>
   				</div>

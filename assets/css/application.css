@@ -193,10 +193,10 @@ em {
 }
 
 a {
-  -moz-transition: all 0.15s ease-in;
-  -o-transition: all 0.15s ease-in;
-  -webkit-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
   color: #fff;
 }
 a:hover {
@@ -205,10 +205,10 @@ a:hover {
 
 .btn,
 button {
-  -moz-transition: background 0.15s ease-in;
-  -o-transition: background 0.15s ease-in;
-  -webkit-transition: background 0.15s ease-in;
-  transition: background 0.15s ease-in;
+  -moz-transition: background 0.15s ease;
+  -o-transition: background 0.15s ease;
+  -webkit-transition: background 0.15s ease;
+  transition: background 0.15s ease;
   position: relative;
   width: 100%;
   padding: 2em 0;
@@ -224,16 +224,33 @@ button {
 button:hover {
   background: #fece47;
 }
+.btn .icon-arrow,
+button .icon-arrow {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.btn:hover .icon-arrow,
+button:hover .icon-arrow {
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
 
-.form-item label {
+.form-radio label {
   position: relative;
 }
-.form-item label:after {
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  -webkit-transition: all 0.4s ease;
-  -webkit-transition-delay: 0s;
-  transition: all 0.4s ease 0s;
+.form-radio label:after {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   content: "";
   position: absolute;
   top: 0;
@@ -243,25 +260,24 @@ button:hover {
   height: 0;
   background: #fff;
 }
-.form-item label:hover:after {
+.form-radio label:hover:after {
   height: 100%;
 }
-.form-item label:hover span:after {
+.form-radio label:hover span:after {
   opacity: 1;
   -moz-transform: translateY(4px);
   -ms-transform: translateY(4px);
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
 }
-.form-item label span {
+.form-radio label span {
   position: relative;
 }
-.form-item label span:after {
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+.form-radio label span:after {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -webkit-transition-delay: 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease;
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
   -webkit-transform: translateY(10px);
@@ -274,6 +290,14 @@ button:hover {
   width: 100%;
   height: 1px;
   background: #fff;
+}
+
+.form-radio input:checked + label span:after {
+  opacity: 1;
+  -moz-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 label {
@@ -475,10 +499,10 @@ label {
 .form-item:nth-of-type(2) .form-answers {
   background: #91ac3a;
 }
-.form-item:nth-of-type(2) label {
+.form-item:nth-of-type(2) label:after {
   background: #91ac3a;
 }
-.form-item:nth-of-type(2) label:hover {
+.form-item:nth-of-type(2) label:hover:after {
   background: #86a12e;
 }
 .form-item:nth-of-type(2) .form-radio input:checked + label {
@@ -498,10 +522,10 @@ label {
 .form-item:nth-of-type(3) .form-answers {
   background: #e91323;
 }
-.form-item:nth-of-type(3) label {
+.form-item:nth-of-type(3) label:after {
   background: #e91323;
 }
-.form-item:nth-of-type(3) label:hover {
+.form-item:nth-of-type(3) label:hover:after {
   background: #bb121f;
 }
 .form-item:nth-of-type(3) .form-radio input:checked + label {

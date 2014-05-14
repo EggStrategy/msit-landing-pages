@@ -58,15 +58,7 @@ $(function(){
   
   	});
   }
-  
-  
-	$('.error').each(function() {
-	   if ($(this).find('input:checked')) {
-       $(this).removeClass('error');
-	   }
-	});
 
   formSubmit();
-  
 
 });

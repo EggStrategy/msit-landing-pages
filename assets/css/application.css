@@ -313,16 +313,22 @@ label {
   position: relative;
 }
 .form-radio input {
-  opacity: 0;
-  float: left;
-  width: 20px;
+  /*
+      opacity: 0;
+      float: left
+  */
+  position: relative;
+  z-index: 10;
+  float: right;
+  width: 100%;
+  height: 40px;
+  background: #000;
+}
+.form-radio input:checked {
+  background: #ccc;
 }
 
 .form-radio input + label {
-  -moz-transition: background 0.2s ease-in;
-  -o-transition: background 0.2s ease-in;
-  -webkit-transition: background 0.2s ease-in;
-  transition: background 0.2s ease-in;
   cursor: pointer;
 }
 

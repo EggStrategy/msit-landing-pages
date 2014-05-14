@@ -64,6 +64,10 @@
       font-size: 18px;
     }
   }
+
+  @include bp-ipad-land() {
+    height: 282px;
+  }
 }
 
 .form-group {

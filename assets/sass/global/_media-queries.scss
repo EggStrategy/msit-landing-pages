@@ -24,3 +24,17 @@ $xsmall:  27.5em;
 @mixin bp-max-min($max, $min) {
 	@media (max-width: $max) and (min-width: $min) { @content; }
 }
+
+
+@mixin bp-ipad-land() {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+
+}
+
+@mixin bp-ipad-port() {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}

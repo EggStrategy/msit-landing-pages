@@ -8,14 +8,21 @@
   left: 0;
   height: 100%;
   background: $blue;
+  text-align: center;
   
   .wrapper {
     @include vertical-align;
     height: 100%;
+    padding-top: 3em;
+  }
+  
+  [class*="icon-circle"] {
+    position: relative;
+    top: auto;
+    left: auto;
   }
   
   .content {
-    padding: 3.75em 0 0 12.5em;
     text-align: center;
   }
   

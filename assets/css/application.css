@@ -243,10 +243,21 @@ button:hover .icon-arrow {
   transform: translateX(4px);
 }
 
-.form-radio label {
-  position: relative;
+label {
+  display: block;
+  color: #fff;
+  font-style: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
-.form-radio label:after {
+
+/* Modules */
+.form-radio {
+  position: relative;
+  cursor: pointer;
+}
+.form-radio:after {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -259,20 +270,31 @@ button:hover .icon-arrow {
   width: 100%;
   height: 0;
 }
-.form-radio label:hover:after {
+.form-radio:hover:after {
   height: 100%;
 }
-.form-radio label:hover span:after {
+.form-radio:hover span:after {
   opacity: 1;
   -moz-transform: translateY(4px);
   -ms-transform: translateY(4px);
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
 }
-.form-radio label span {
+.form-radio input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+.form-radio span {
   position: relative;
 }
-.form-radio label span:after {
+.form-radio span:after {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -299,35 +321,6 @@ button:hover .icon-arrow {
   transform: translateY(4px);
 }
 
-label {
-  display: block;
-  color: #fff;
-  font-style: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-/** Radio ============**/
-.form-radio {
-  position: relative;
-}
-.form-radio input {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  float: right;
-  width: 100%;
-  height: 100%;
-}
-
-.form-radio input + label {
-  cursor: pointer;
-}
-
-/* Modules */
 .modal-thank-you {
   display: none;
   position: fixed;
@@ -476,6 +469,12 @@ label {
 .form-item:nth-of-type(1) .form-answers {
   background: #0fb1c3;
 }
+.form-item:nth-of-type(1) .form-radio:after {
+  background: #0fb1c3;
+}
+.form-item:nth-of-type(1) .form-radio:hover:after {
+  background: #0b9cac;
+}
 .form-item:nth-of-type(1) label {
   padding: 1em 0;
 }
@@ -485,12 +484,6 @@ label {
     font-size: 16px;
     text-align: left;
   }
-}
-.form-item:nth-of-type(1) label:after {
-  background: #0fb1c3;
-}
-.form-item:nth-of-type(1) label:hover:after {
-  background: #0b9cac;
 }
 .form-item:nth-of-type(1) .form-radio input:checked + label {
   background: #0b9cac;
@@ -509,10 +502,10 @@ label {
 .form-item:nth-of-type(2) .form-answers {
   background: #91ac3a;
 }
-.form-item:nth-of-type(2) label:after {
+.form-item:nth-of-type(2) .form-radio:after {
   background: #91ac3a;
 }
-.form-item:nth-of-type(2) label:hover:after {
+.form-item:nth-of-type(2) .form-radio:hover:after {
   background: #86a12e;
 }
 .form-item:nth-of-type(2) .form-radio input:checked + label {
@@ -532,10 +525,10 @@ label {
 .form-item:nth-of-type(3) .form-answers {
   background: #e91323;
 }
-.form-item:nth-of-type(3) label:after {
+.form-item:nth-of-type(3) .form-radio:after {
   background: #e91323;
 }
-.form-item:nth-of-type(3) label:hover:after {
+.form-item:nth-of-type(3) .form-radio:hover:after {
   background: #bb121f;
 }
 .form-item:nth-of-type(3) .form-radio input:checked + label {

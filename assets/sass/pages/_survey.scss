@@ -84,6 +84,16 @@
   .form-answers {
     background: $blue-md;
   }
+  
+  .form-radio {
+    &:after {
+      background: $blue-md;
+    }
+
+    &:hover:after {
+      background: $blue-dk;
+    }
+  }
     
   label {
     padding: 1em 0;
@@ -94,13 +104,6 @@
       text-align: left;
     }
 
-    &:after {
-      background: $blue-md;
-    }
-
-    &:hover:after {
-      background: $blue-dk;
-    }
   }
 
   .form-radio input:checked + label {
@@ -122,7 +125,7 @@
     background: $green-md;
   }
 
-  label {
+  .form-radio {
     &:after {
       background: $green-md;
     }
@@ -151,7 +154,7 @@
     background: $red-md;
   }
 
-  label {
+  .form-radio {
     &:after {
       background: $red-md;
     }

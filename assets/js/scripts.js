@@ -27,23 +27,39 @@ $(function(){
             errorcount++;
       		} else if(radioChecked.length > 0) {
             $(this).removeClass('error');
+            $(this).find('.icon-error-white').remove();
       		}
   		});
+
+  		if(errorcount > 0) {
+  		  function formValid() {
+    		  var formMessage = $('.form-message p');
+    		  $(formMessage).parent().addClass('error-message');
+          $(formMessage).text(' Please answer all questions');
+          $(formMessage).prepend('<span class="icon-error-grey"></span>');
+  		  }
+  		  formValid();
+  		}
   		
+/*
   		if(errorcount > 0) {
   		  function qNumber(errorItem) {
     		  var a = []
     		  var formMessage = $('.form-message p');
+  		    var formItem = $('.form-item');
   		    var errorItem = $('.error');
-    		  for (var i = 0; i < errorItem.length; i++) {
-      		  a.push('#' + (i+1));
-    		  }
+  		    var errorItemIndex = formItem.index(errorItem);
+  		    var errorNumbers = errorItem.map(function( index ) {
+    		    return '#' + ( index + 1);
+  		    });
+          console.log(errorNumbers);
     		  $(formMessage).parent().addClass('error-message');
-          $(formMessage).text(' Please answer ').append(a.join(', '));
+          $(formMessage).text(' Please answer ').append(errorItemIndex.get().join(', '));
           $(formMessage).prepend('<span class="icon-error-grey"></span>');
   		  }
   		  qNumber();
   		}
+*/
   		
   		if(errorcount == 0) {
   

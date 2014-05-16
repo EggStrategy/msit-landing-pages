@@ -40,6 +40,7 @@ $google_UA = 'UA-50925626-1'
           		  <input type="radio" name="question_1" id="never" value="Never">
           		  <label for="never"><span>Never</span></label>
           		</div>
+          		<div class="answer-complete"><span class="icon-checkmark"></span></div>
             </div>
           </div>
         </div>
@@ -61,6 +62,7 @@ $google_UA = 'UA-50925626-1'
                 <input type="radio" name="question_2" id="q2-no" value="No">
           		  <label for="q2-no"><span>No</span></label>
           		</div>
+          		<div class="answer-complete"><span class="icon-checkmark"></span></div>
             </div>
           </div>
         </div>
@@ -82,6 +84,7 @@ $google_UA = 'UA-50925626-1'
                 <input type="radio" name="question_3" id="q3-no" value="No">
           		  <label for="q3-no"><span>No</span></label>
           		</div>
+          		<div class="answer-complete"><span class="icon-checkmark"></span></div>
             </div>
           </div>
         </div>

@@ -160,6 +160,20 @@ em {
   vertical-align: -1px;
 }
 
+.icon-checkmark {
+  width: 100px;
+  height: 100px;
+  background: url('/assets/images/checkmark.svg') no-repeat 0 0;
+  background-size: 100px 100px;
+}
+@media (min-width: 50em) {
+  .icon-checkmark {
+    width: 125px;
+    height: 125px;
+    background-size: auto;
+  }
+}
+
 /*
 .icon-circle-1 {
   width: 174px;
@@ -285,7 +299,7 @@ label {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 20;
   float: right;
   width: 100%;
   height: 100%;
@@ -461,6 +475,27 @@ label {
   }
 }
 
+.answer-complete {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  text-align: center;
+}
+.answer-complete.checked {
+  display: block;
+}
+.answer-complete .icon-checkmark {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 @media (min-width: 50em) {
   .form-group {
     position: relative;
@@ -471,6 +506,7 @@ label {
   }
 }
 
+/** QUESTION 1 **/
 .form-item:nth-of-type(1) {
   background: #1bc7d5;
   border-top: 10px solid #19b5c2;
@@ -483,6 +519,9 @@ label {
 }
 .form-item:nth-of-type(1) .form-answers {
   background: #0fb1c3;
+}
+.form-item:nth-of-type(1) .answer-complete {
+  background: rgba(25, 181, 194, 0.8);
 }
 .form-item:nth-of-type(1) .form-radio:after {
   background: #0fb1c3;
@@ -504,6 +543,7 @@ label {
   background: #0b9cac;
 }
 
+/** QUESTION 2 **/
 .form-item:nth-of-type(2) {
   background: #a8bf50;
   border-top: 10px solid #91ac3a;
@@ -517,6 +557,9 @@ label {
 .form-item:nth-of-type(2) .form-answers {
   background: #91ac3a;
 }
+.form-item:nth-of-type(2) .answer-complete {
+  background: rgba(148, 170, 65, 0.8);
+}
 .form-item:nth-of-type(2) .form-radio:after {
   background: #91ac3a;
 }
@@ -527,6 +570,7 @@ label {
   background: #86a12e;
 }
 
+/** QUESTION 3 **/
 .form-item:nth-of-type(3) {
   background: #f0223a;
   border-top: 10px solid #d71a30;
@@ -539,6 +583,9 @@ label {
 }
 .form-item:nth-of-type(3) .form-answers {
   background: #e91323;
+}
+.form-item:nth-of-type(3) .answer-complete {
+  background: rgba(215, 26, 48, 0.8);
 }
 .form-item:nth-of-type(3) .form-radio:after {
   background: #e91323;

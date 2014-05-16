@@ -50,6 +50,19 @@
   vertical-align: -1px;
 }
 
+.icon-checkmark {
+  width: 100px;
+  height: 100px;
+  background: $checkmark no-repeat 0 0;
+  background-size: 100px 100px;
+
+  @include bp-min-width($medium) {
+    width: 125px;
+    height: 125px;
+    background-size: auto;
+  }
+}
+
 
 /*
 .icon-circle-1 {

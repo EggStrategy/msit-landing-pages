@@ -2,10 +2,7 @@ $(function(){
 
   function radioCheck() {
     $('input[type="radio"]').change(function() {
-      if(this.checked) {
-        $(this).parent().parent().find('.checked').removeClass('checked');
-        $(this).parent().toggleClass('checked');
-      }
+      $(this).parent().parent().find('.answer-complete').delay(500).fadeIn(500);
     });
   }
 

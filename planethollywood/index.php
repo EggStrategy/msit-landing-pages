@@ -1,8 +1,8 @@
 <?php
-$page_id = 1;
-$title_tag = 'Hard Rock Cafe';
-$body_class = 'page-hard-rock';
-$google_UA = 'UA-50925626-1'
+$page_id = 6;
+$title_tag = 'Planet Hollywood';
+$body_class = 'page-planet-hollywood';
+$google_UA = 'UA-50925626-6'
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/views/header.php'; ?>
 
@@ -17,7 +17,7 @@ $google_UA = 'UA-50925626-1'
             <div class="question-total">(of 3)</div>
           </div>
           <div class="icon-circle-1"></div>
-          <p class="form-question">When was the last time you visited a Hard Rock Cafe restaurant?</p>
+          <p class="form-question">When was the last time you visited a Planet Hollywood restaurant?</p>
           <div class="form-answers">
             <div class="form-group">
           		<div class="form-radio">
@@ -51,7 +51,7 @@ $google_UA = 'UA-50925626-1'
             <div class="question-total">(of 3)</div>
           </div>
           <div class="icon-circle-2"></div>
-          <p class="form-question">Have you talked about your last experience at a Hard Rock Cafe restaurant with a friend, family member or online (e.g. Facebook)?</p>
+          <p class="form-question">Have you talked about your last experience at a Planet Hollywood restaurant with a friend, family member or online (e.g. Facebook)?</p>
           <div class="form-answers form-two-options">
             <div class="form-group">
           		<div class="form-radio">
@@ -73,7 +73,7 @@ $google_UA = 'UA-50925626-1'
             <div class="question-total">(of 3)</div>
           </div>
           <div class="icon-circle-3"></div>
-          <p class="form-question">Have you recently recommended Hard Rock Cafe to a friend or family member?</p>
+          <p class="form-question">Have you recently recommended Planet Hollywood to a friend or family member?</p>
           <div class="form-answers form-two-options">
             <div class="form-group">
           		<div class="form-radio">

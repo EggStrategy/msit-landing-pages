@@ -1,0 +1,46 @@
+
+.logo {
+  background: $sprite-logos-png no-repeat;
+}
+
+.page-hard-rock .logo {
+  width: 140px;
+  height: 84px;
+  background-position: 0 0;
+}
+
+.page-tgif .logo {
+  width: 138px;
+  height: 60px;
+  background-position: 0 -170px;
+}
+
+.page-cali-pizza .logo {
+  width: 146px;
+  height: 116px;
+  background-position: 0 -240px;
+}
+
+.page-margaritaville .logo {
+  width: 161px;
+  height: 109px;
+  background-position: 0 -357px;
+}
+
+.page-bubba-gump .logo {
+  width: 191px;
+  height: 77px;
+  background-position: 0 -475px;
+}
+
+.page-planet-hollywood .logo {
+  width: 139px;
+  height: 121px;
+  background-position: 0 -557px;
+}
+
+.page-outback .logo {
+  width: 190px;
+  height: 82px;
+  background-position: 0 -1060px;
+}

@@ -4,7 +4,7 @@ $title_tag = 'Hard Rock Cafe';
 $body_class = 'page-hard-rock';
 $google_UA = 'UA-50925626-1'
 ?>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/views/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/views/header.php'; ?>
 
   <section id="main" class="main">
     <div class="wrapper cf">
@@ -113,4 +113,4 @@ $google_UA = 'UA-50925626-1'
     </div>
   </div>
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/views/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/views/footer.php'; ?>

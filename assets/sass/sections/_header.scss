@@ -19,8 +19,7 @@
   @include bp-min-width($medium) {
     @include vertical-align;
     float: left;
-    margin: 0;
-    padding-left: 2em;
+    margin: 0 0 0 2em;
   }
 }
 

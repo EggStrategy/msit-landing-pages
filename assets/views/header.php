@@ -22,7 +22,7 @@
 <body class="<?php echo($body_class); ?>">
   <header class="header">
     <div class="wrapper cf">
-      <div class="logo"><img src="/assets/images/logo-hard-rock.png" alt="Hard Rock"></div>
+      <div class="logo"></div>
       <div class="tagline">
         <h1>We want to hear from you!</h1>
       </div>

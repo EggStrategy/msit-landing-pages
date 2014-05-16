@@ -484,18 +484,19 @@ label {
   left: 0;
   z-index: 30;
   width: 100%;
-  height: 281px;
-  text-align: center;
 }
-.answer-complete.checked {
-  display: block;
+@media (min-width: 50em) {
+  .answer-complete {
+    height: 281px;
+  }
 }
 .answer-complete .icon-checkmark {
-  position: relative;
+  position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: 50em) {

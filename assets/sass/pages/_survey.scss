@@ -78,19 +78,18 @@
   left: 0;
   z-index: 30;
   width: 100%;
-  height: 281px;
-  text-align: center;
-  
-  &.checked {
-    display: block;
+
+  @include bp-min-width($medium) {
+    height: 281px;
   }
   
   .icon-checkmark {
-    @include vertical-align;
+    @include absolute-center;
   }
+
 }
 
-.form-group {
+.form-group {  
   @include bp-min-width($medium) {
     @include vertical-align;
   }

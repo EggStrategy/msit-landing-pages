@@ -1,0 +1,19 @@
+
+.page-home {
+  background: $blue;
+  text-align: center;
+
+  [class*="icon-circle"] {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 3em;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}

@@ -2,7 +2,7 @@ $(function(){
 
   function radioCheck() {
     $('input[type="radio"]').change(function() {
-      $(this).parent().parent().find('.answer-complete').delay(500).fadeIn(500);
+      $(this).parent().parent().parent().find('.answer-complete').delay(500).fadeIn(500);
     });
   }
 

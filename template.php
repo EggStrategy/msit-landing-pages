@@ -40,8 +40,8 @@ $google_UA = 'UA-50925626-1'
           		  <input type="radio" name="question_1" id="never" value="Never">
           		  <label for="never"><span>Never</span></label>
           		</div>
-          		<div class="answer-complete"><span class="icon-checkmark"></span></div>
             </div>
+        		<div class="answer-complete"><span class="icon-checkmark"></span></div>
           </div>
         </div>
 

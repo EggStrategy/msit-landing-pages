@@ -463,7 +463,7 @@ label {
     right: 0;
     bottom: 1px;
     width: 340px;
-    height: 100%;
+    height: 282px;
   }
   .form-answers label {
     font-size: 18px;
@@ -479,10 +479,12 @@ label {
   display: none;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 1px;
   left: 0;
   z-index: 30;
   width: 100%;
-  height: 100%;
+  height: 281px;
   text-align: center;
 }
 .answer-complete.checked {

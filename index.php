@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="google-site-verification" content="UJXFe1n0_12xYLCto5fSHG-v82nH1u6xlqYbI_ry9EI" />
-	<title>The Big Soap Box</title>
-	<link href="/assets/css/application.css" rel="stylesheet" media="all">
-	<link rel="shortcut icon" href="/images/favicon.png" />
-	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="google-site-verification" content="UJXFe1n0_12xYLCto5fSHG-v82nH1u6xlqYbI_ry9EI" />
+  <title>The Big Soap Box</title>
+  <link href="/assets/css/application.css" rel="stylesheet" media="all">
+  <link rel="shortcut icon" href="/images/favicon.png" />
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body class="page-home">
-
-	<section id="main" class="main">
-		<div class="wrapper cf">
-  		
+  
+  <section id="main" class="main">
+    <div class="wrapper cf">
+    
       <div class="icon-circle-4"></div>
       <div class="content">
         <p>The Big Soap Box</p>
       </div>
-
-		</div>
-	</section>
-
+    
+    </div>
+  </section>
+  
 </body>
 </html>

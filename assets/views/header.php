@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<title><?php echo($title_tag); ?> | Egg Strategy</title>
 	<link href="/assets/css/application.css" rel="stylesheet" media="all">
-	<link rel="shortcut icon" href="/images/favicon.png" />
 	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -15,7 +14,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', '<?php echo($google_UA); ?>', 'thebigsoapbox.com');
-  ga('send', 'pageview');  
+  ga('send', 'pageview');
   </script>
 </head>
 

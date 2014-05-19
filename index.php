@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
+	<meta name="google-site-verification" content="UJXFe1n0_12xYLCto5fSHG-v82nH1u6xlqYbI_ry9EI" />
 	<title>The Big Soap Box</title>
 	<link href="/assets/css/application.css" rel="stylesheet" media="all">
 	<link rel="shortcut icon" href="/images/favicon.png" />

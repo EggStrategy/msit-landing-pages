@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <title><?php echo($title_tag); ?> | Egg Strategy</title>
   <link href="/assets/css/application.css" rel="stylesheet" media="all">
-  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//cdn.optimizely.com/js/978307032.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -17,6 +17,7 @@
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
   </script>
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body class="<?php echo($body_class); ?>">

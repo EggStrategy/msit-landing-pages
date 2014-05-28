@@ -1,6 +1,6 @@
 <?php
 $page_id = 3;
-$title_tag = 'California Pizza Kitchen';
+$page_title = 'California Pizza Kitchen';
 $body_class = 'page-cali-pizza';
 $google_UA = 'UA-50925626-3'
 ?>
@@ -102,15 +102,5 @@ $google_UA = 'UA-50925626-3'
   		
     </div>
   </section>
-
-  <div class="modal-thank-you">
-    <div class="wrapper">
-      <div class="icon-circle-4"></div>
-      <div class="content">
-        <h2>Thank You!</h2>
-        <p><a href="https://www.google.com">Back to Google search <span class="icon-arrow-grey"></span></a></p>
-      </div>
-    </div>
-  </div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/views/footer.php'; ?>

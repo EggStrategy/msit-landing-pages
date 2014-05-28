@@ -8,6 +8,7 @@
   
   .wrapper {
     @include bp-min-width($medium) {
+      position: relative;
       height: 198px;
     }
   }
@@ -15,26 +16,31 @@
 
 .logo {
   margin: 1em auto;
+  padding: 0 1em;
 
   @include bp-min-width($medium) {
     @include vertical-align;
     float: left;
-    margin: 0 0 0 2em;
+    width: 100%;
+    margin: 0;
+    padding: 0 340px 0 1em;
   }
 }
 
 .tagline {
   margin-bottom: 1px;
-  padding: 2em 1em;
+  padding: 1.5em 1em;
   background: $yellow;
 
   @include bp-min-width($medium) {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 340px;
     height: 100%;
     padding: 0 10em 0 2em;
 
-    h1 {
+    h2 {
       @include vertical-align;
     }
   }

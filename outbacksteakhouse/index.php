@@ -1,6 +1,6 @@
 <?php
 $page_id = 7;
-$title_tag = 'Outback Steakhouse';
+$page_title = 'Outback Steakhouse';
 $body_class = 'page-outback';
 $google_UA = 'UA-50925626-7'
 ?>
@@ -102,15 +102,5 @@ $google_UA = 'UA-50925626-7'
   		
     </div>
   </section>
-
-  <div class="modal-thank-you">
-    <div class="wrapper">
-      <div class="icon-circle-4"></div>
-      <div class="content">
-        <h2>Thank You!</h2>
-        <p><a href="https://www.google.com">Back to Google search <span class="icon-arrow-grey"></span></a></p>
-      </div>
-    </div>
-  </div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/views/footer.php'; ?>

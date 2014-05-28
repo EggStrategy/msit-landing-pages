@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <title><?php echo($title_tag); ?> | Egg Strategy</title>
+  <title><?php echo($page_title); ?> | Egg Strategy</title>
   <link href="/assets/css/application.css" rel="stylesheet" media="all">
   <script src="//cdn.optimizely.com/js/978307032.js"></script>
   <script>
@@ -23,9 +23,12 @@
 <body class="<?php echo($body_class); ?>">
   <header class="header">
     <div class="wrapper cf">
-      <div class="logo"></div>
+      <div class="logo">
+        <p>Tell us what you think about?</p>
+        <h1><?php echo($page_title); ?></h1>
+      </div>
       <div class="tagline">
-        <h1>We want to hear from you!</h1>
+        <h2>We want to hear from you!</h2>
       </div>
     </div>
   </header>

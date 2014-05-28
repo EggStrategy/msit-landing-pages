@@ -87,6 +87,18 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+@media (min-width: 50em) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -94,7 +106,7 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-h2 {
+h3 {
   color: #fff;
   font-size: 50px;
   text-transform: uppercase;
@@ -267,8 +279,10 @@ label {
 }
 
 /* Modules */
+/*
+
 .logo {
-  background: url('/assets/images/sprite-logos.png') no-repeat;
+  background: $sprite-logos-png no-repeat;
 }
 
 .page-hard-rock .logo {
@@ -312,7 +326,7 @@ label {
   height: 82px;
   background-position: 0 -1060px;
 }
-
+*/
 .form-radio {
   position: relative;
   cursor: pointer;
@@ -419,7 +433,7 @@ label {
 .modal-thank-you .content {
   text-align: center;
 }
-.modal-thank-you h2 {
+.modal-thank-you h3 {
   margin: 0.25em 0 0.5em;
 }
 .modal-thank-you p {
@@ -795,12 +809,14 @@ label {
 }
 @media (min-width: 50em) {
   .header .wrapper {
+    position: relative;
     height: 198px;
   }
 }
 
 .logo {
   margin: 1em auto;
+  padding: 0 1em;
 }
 @media (min-width: 50em) {
   .logo {
@@ -810,23 +826,27 @@ label {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     float: left;
-    margin: 0 0 0 2em;
+    width: 100%;
+    margin: 0;
+    padding: 0 340px 0 1em;
   }
 }
 
 .tagline {
   margin-bottom: 1px;
-  padding: 2em 1em;
+  padding: 1.5em 1em;
   background: #fec014;
 }
 @media (min-width: 50em) {
   .tagline {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 340px;
     height: 100%;
     padding: 0 10em 0 2em;
   }
-  .tagline h1 {
+  .tagline h2 {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);

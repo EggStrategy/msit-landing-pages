@@ -1,5 +1,15 @@
 $(function(){
 
+  // Event Tracking
+  $('.btn').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'submit-button');
+  });
+  $('input[type="radio"]').change(function() {
+    var radioValue = $(this).val();
+    var radioName = $(this).attr('name');
+    ga('send', 'event', radioName, 'click', radioValue);
+  });
+
   function radioCheck() {
     $('input[type="radio"]').change(function() {
       $(this).parent().parent().parent().find('.answer-complete').delay(500).fadeIn(500);

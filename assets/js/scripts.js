@@ -1,14 +1,21 @@
 $(function(){
 
   // Event Tracking
-  $('.btn').on('click', function() {
-    ga('send', 'event', 'button', 'click', 'submit-button');
-  });
-  $('input[type="radio"]').change(function() {
-    var radioValue = $(this).val();
-    var radioName = $(this).attr('name');
-    ga('send', 'event', radioName, 'click', radioValue);
-  });
+  function eventTracking() {
+    $('.btn').on('click', function() {
+      ga('send', 'event', 'button', 'click', 'submit-button');
+    });
+    $('input[type="radio"]').change(function() {
+      var radioValue = $(this).val();
+      var radioName = $(this).attr('name');
+      var questionIndex = $(this).closest('.form-item').index();
+      var questinNumber = questionIndex + 1;
+      var questinLabel = 'Q' + questinNumber;
+      var eventLabel = questinLabel + ' ' + radioValue;
+      ga('send', 'event', radioName, 'click', eventLabel);
+      //console.log(eventLabel);
+    });
+  }
 
   function radioCheck() {
     $('input[type="radio"]').change(function() {
@@ -47,27 +54,7 @@ $(function(){
   		  }
   		  formValid();
   		}
-  		
-/*
-  		if(errorcount > 0) {
-  		  function qNumber(errorItem) {
-    		  var a = []
-    		  var formMessage = $('.form-message p');
-  		    var formItem = $('.form-item');
-  		    var errorItem = $('.error');
-  		    var errorItemIndex = formItem.index(errorItem);
-  		    var errorNumbers = errorItem.map(function( index ) {
-    		    return '#' + ( index + 1);
-  		    });
-          console.log(errorNumbers);
-    		  $(formMessage).parent().addClass('error-message');
-          $(formMessage).text(' Please answer ').append(errorItemIndex.get().join(', '));
-          $(formMessage).prepend('<span class="icon-error-grey"></span>');
-  		  }
-  		  qNumber();
-  		}
-*/
-  		
+    		
   		if(errorcount == 0) {
   
       		// prevent multiple form submissions
@@ -92,6 +79,7 @@ $(function(){
   	});
   }
   
+  eventTracking();
   radioCheck();
   formSubmit();
 

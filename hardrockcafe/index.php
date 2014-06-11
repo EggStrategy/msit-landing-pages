@@ -8,6 +8,9 @@ $google_UA = 'UA-50925626-1'
 
   <section id="main" class="main">
     <div class="wrapper cf">
+    
+      <?php echo $_SERVER['REMOTE_ADDR']; ?>
+      <?php echo $_SERVER['HTTP_X_FORWARDED_FOR']; ?>
   		
   		<form action="">
 

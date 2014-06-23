@@ -89,7 +89,8 @@ $google_UA = 'UA-50925626-15'
           </div>
         </div>
 				
-        <input type="hidden" name="page_id" value="<?php echo ($page_id); ?>">
+        <input type="hidden" name="page_id" value="<?php echo $page_id; ?>">
+        <input type="hidden" name="user_ip" value="<?php echo getIp(); ?>">
         
         <div class="form-footer">
           <div class="form-message">

@@ -8,8 +8,6 @@ $google_UA = 'UA-50925626-1'
 
   <section id="main" class="main">
     <div class="wrapper cf">
-    
-      <?php echo getIp(); ?>
   		
   		<form action="">
 

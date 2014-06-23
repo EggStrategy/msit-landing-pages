@@ -9,8 +9,7 @@ $google_UA = 'UA-50925626-1'
   <section id="main" class="main">
     <div class="wrapper cf">
     
-      <?php echo $_SERVER['REMOTE_ADDR']; ?>
-      <?php echo $_SERVER['HTTP_X_FORWARDED_FOR']; ?>
+      <?php echo getIp(); ?>
   		
   		<form action="">
 
@@ -92,7 +91,8 @@ $google_UA = 'UA-50925626-1'
           </div>
         </div>
 				
-        <input type="hidden" name="page_id" value="<?php echo ($page_id); ?>">
+        <input type="hidden" name="page_id" value="<?php echo $page_id; ?>">
+        <input type="hidden" name="user_ip" value="<?php echo getIp(); ?>">
         
         <div class="form-footer">
           <div class="form-message">

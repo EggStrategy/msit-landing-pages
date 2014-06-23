@@ -64,11 +64,13 @@ $(function(){
       		var question_2 = $('input[name="question_2"]:checked').val();
       		var question_3 = $('input[name="question_3"]:checked').val();
       		var page_id = $('input[name="page_id"]').val();
+      		var user_ip = $('input[name="user_ip"]').val();
       		var data = {
       			question_1: question_1,
       			question_2: question_2,
       			question_3: question_3,
-      			page_id: page_id
+      			page_id: page_id,
+      			user_ip: user_ip
       		}
       		$.post('/php/survey.php', data, function(response){
       			// do funky stuff here, like fade out the form and show a thank you message
